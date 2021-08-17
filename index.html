@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Registro </title>
+		<meta charset="UTF-8"/>
+		<link href="css/estilo.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<img src="img/logo.jpg" alt="no hay imagen">
+			</div>
+		</header>
+		
+	<section id="formulario">
+	<form name="Nuevo Usuario" method="POST" action="php/ConexionCrearUsuario.php">
+	
+	Nickname:<br>
+	<input type="text" name="nickname" pattern="[a-zA-Z0-9]+" placeholder="Ingrese su nickname" required><br>
+	
+	Contraseña:<br>
+	<input type="password" name="contraseña" maxlength="20" autocomplete="new-password" placeholder="Ingrese su password" required><br>
+	
+	Nombre:<br>
+	<input type="text" name="nombre"  placeholder="Ingrese sus nombres" required><br>
+	
+	Apellidos:<br>
+	<input type="text" name="apellidos"  placeholder="Ingrese sus apellidos" required><br>
+
+	Email:<br>
+	<input type="email" name="correo"  placeholder="Ingrese sus email" required><br>
+	
+	Edad:<br>
+	<input type="number" name="edad"  min= "18" placeholder="Ingrese su edad" required><br>
+	
+	Descripcion<br>
+	<textarea name="descripcion" placeholder="Ingrese una descripcion" required></textarea><br>
+	<input type="submit" name="enviar" class="boton" value="Registrate">
+	<input type="reset" class="boton" value="Borrar">
+	
+	<hr>
+	
+	</form>
+	</section>
+	
+	<section id="formulario2">
+	<form name="contacto" method="POST" action="php/IniciarSesion.php">
+	
+	Nickname:<br>
+	<input type="text" name="nickname" pattern="[a-zA-Z0-9]+" placeholder="Ingrese su nickname" required><br>
+	
+	Contraseña:<br>
+	<input type="password" name="contraseña" maxlength="20" autocomplete="off" placeholder="Ingrerse su password" required><br>
+	
+	<hr>
+	<input type="submit" name="enviar" class="boton" value="Iniciar Sesion">
+	
+	</form>
+	</section>
+	</body>
+</html>  

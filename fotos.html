@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Red Social del perro</title>
+		<meta charset="UTF-8"/>  
+		<link href="css/estilo.css" rel="stylesheet">
+		
+	</head>
+	<body>
+	
+	<header>
+	<div id="logo">
+		<img src=img/logo.jpg alt="no hay imagen"></a>
+	</div>
+	<nav class="menu">
+	
+	<ul> 
+	
+	<li>  <a href="index.html">Inicio</a>  	</li>
+	<li>  <a href="miperfil.html">Mi Perfil</a>  	</li>
+	<li>  <a href="amigos.html">Mis amigos</a>  	</li>
+	<li>  <a href="fotos.html">Mis fotos</a>  	</li>
+	<li>  <a href="buscar.html">Buscar amigos</a>  	</li>
+	</ul>
+	
+	</nav>
+	</header>
+	<section id="perfil">
+			<img src=img/fotoperfil.jpg alt="no hay imagen">
+			<h1>Nombre Perro</h1>
+			
+			<form action="php/cambiarFoto.php" method="POST" enctype="multipart/form-data"/> <!-- enctype="multipart/form-data es necesario para subir archivos crea la forma que permite subir los archivos-->
+			Cambiar Foto de Perfil: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png"required />
+			<input type="submit" name"subir" value="subir"/>
+			</form>
+	</section>
+	<section id="recuadros">
+		<h2>Mis fotos</h2>
+		
+		<h3>
+			<form action="php/SubirFoto.php" method="POST" enctype="multipart/form-data"/> 
+			Añadir imagen: <input name="archivo" id="archivo" type="file" accept=".jpg, .jpeg, .png"required />
+			<input type="submit" name"subir" value="subir"/>
+			</form>
+		</h3>
+		
+		<section class="recuadro">
+				<img src=img/foto1.jpg height="200" width="200">
+		</section>
+		<section class="recuadro">
+				<img src=img/foto2.jpg height="200" width="200">
+		</section>
+		<section class="recuadro">
+				<img src=img/foto3.jpg height="200" width="200">
+		</section>
+		<section class="recuadro">
+				<img src=img/foto4.jpg height="200" width="200">
+		</section>
+		<section class="recuadro">
+				<img src=img/foto5.jpg height="200" width="200">
+		</section>
+		<section class="recuadro">
+				<img src=img/foto6.jpg height="200" width="200">
+				
+		</section>
+	<footer>
+		<p>Copyright &copy; 2020, propiedad del perro</p>
+	</footer>
+	</body>
+</html>
